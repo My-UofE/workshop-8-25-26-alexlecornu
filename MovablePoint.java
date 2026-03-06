@@ -36,5 +36,7 @@ public class MovablePoint implements Movable {
 		return String.format("MovablePoint[x= %d,y= %d,xSpeed= %d,ySpeed= %d ]",x,y,xSpeed,ySpeed);
 	}
 
+	
+
 
 }
