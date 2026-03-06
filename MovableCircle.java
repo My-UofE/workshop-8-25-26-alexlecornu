@@ -1,5 +1,5 @@
 
-public class MovableCircle implements Movable { 
+public class MovableCircle implements Shape { 
   private MovablePoint center;
   private int radius;
   
@@ -27,6 +27,16 @@ public class MovableCircle implements Movable {
   public void moveRight() {
 	 center.moveRight();// move the center up
   }
+  @Override
+  public double area(){
+    return 3.1415 * (this.radius* this.radius);
+  }
+  @Override
+  public double perimeter(){
+    return 2* this.radius * 3.1415;
+  }
+
+
   @Override
 	public String toString(){
 		return String.format("MovablePoint[x= %d,y= %d,xSpeed= %d,ySpeed= %d, radius= %d ]",center.x,center.y,center.xSpeed,center.ySpeed,radius);
